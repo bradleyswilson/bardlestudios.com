@@ -1,0 +1,16 @@
+---
+layout: default
+body_class: post-page
+---
+<article class="post wrap">
+  <p class="back"><a href="/devlog/">Devlog</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  <div class="prose">
+{{ content }}
+  </div>
+  <aside class="post-signup">
+    <h2>Get the next entry by email</h2>
+    {% include signup.html %}
+  </aside>
+</article>

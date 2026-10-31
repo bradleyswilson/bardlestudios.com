@@ -1,0 +1,55 @@
+---
+layout: default
+body_class: home
+---
+<section class="hero">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="hero-text wrap">
+    <h1>Bardle Studios</h1>
+    <p class="lede">A small independent studio in Little Rock, Arkansas, making <a href="#declination">Declination</a>.</p>
+  </div>
+  <p class="hero-hint" aria-hidden="true">Move the pointer to turn the field</p>
+</section>
+
+<section id="declination" class="game wrap">
+  <div class="game-head">
+    <h2>Declination</h2>
+    <p class="status"><span class="dot" aria-hidden="true"></span>In development</p>
+  </div>
+  <div class="game-body">
+    <div class="prose">
+      <p>Long ago, a civilization saw the planet's magnetic field about to flip. To survive, it split itself into pieces and left them behind as sentinels. Those sentinels have been asleep ever since.</p>
+      <p>You are a small robot whose job is to wake them. You explore a quiet, overgrown world and solve compact push-and-pull puzzles on locked grids. Each solve teaches you a rule, and every rule you learn changes what the rest of the world means.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Genre</dt><dd>Puzzle exploration</dd></div>
+      <div><dt>Platforms</dt><dd>To be announced</dd></div>
+      <div><dt>Release</dt><dd>When it's ready</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="latest wrap">
+  <div class="section-head">
+    <h2>From the devlog</h2>
+    <a href="/devlog/">All entries</a>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+    <li>
+      <a href="{{ post.url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <span class="post-title">{{ post.title }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="signup" class="signup-section">
+  <div class="wrap">
+    <h2>Follow along</h2>
+    <p>Sign up to get new devlog entries and news about Declination by email.</p>
+    {% include signup.html %}
+  </div>
+</section>

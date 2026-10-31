@@ -1,0 +1,12 @@
+{% if site.buttondown_user != "" %}
+<form class="signup" action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_user }}" method="post" target="_blank">
+  <label for="signup-email">Email address</label>
+  <div class="signup-row">
+    <input id="signup-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
+  </div>
+  <p class="fine">Occasional updates on Declination. No spam, unsubscribe anytime.</p>
+</form>
+{% else %}
+<p class="fine">The mailing list is almost ready. Check back soon.</p>
+{% endif %}

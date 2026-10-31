@@ -1,0 +1,19 @@
+---
+layout: default
+title: Devlog
+body_class: devlog-page
+---
+<section class="wrap devlog">
+  <h1>Devlog</h1>
+  <p class="lede">Notes from making Declination: puzzles we're testing, ideas we've dropped and what's next.</p>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <span class="post-title">{{ post.title }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

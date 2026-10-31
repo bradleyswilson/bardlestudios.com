@@ -1,0 +1,16 @@
+title: Bardle Studios
+description: Bardle Studios is a small independent game studio in Little Rock, Arkansas, making Declination.
+url: "https://bardlestudios.com"
+
+# Email signup — create a free Buttondown account (buttondown.com),
+# then put your Buttondown username here. Leave blank to hide the form.
+buttondown_user: ""
+
+permalink: /devlog/:year/:month/:day/:title/
+markdown: kramdown
+exclude:
+  - README.md
+  - preview
+  - build_preview.py
+plugins:
+  - jekyll-feed
