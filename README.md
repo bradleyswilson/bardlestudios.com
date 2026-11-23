@@ -13,7 +13,6 @@ It's a Jekyll site hosted on GitHub Pages. Every push to `main` rebuilds and dep
 | `devlog/` | Devlog index page |
 | `_layouts/`, `_includes/` | Page templates and shared partials |
 | `assets/site.css` | Styles; colors and fonts are at the top |
-| `assets/field.js` | The field-line animation in the hero |
 | `_config.yml` | Site settings |
 
 ## Writing a devlog post
