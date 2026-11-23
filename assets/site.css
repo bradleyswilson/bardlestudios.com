@@ -162,3 +162,31 @@ h3 { font-size: 1.1rem; }
 @media (max-width: 480px) {
   .nav-signup, .nav-game { display: none; }
 }
+
+/* EmailOctopus embed: restyle to match the site */
+.signup-eo [data-form].inline-container { padding: 0; background: none; border: 0; font-family: var(--font); color: inherit; }
+.signup-eo [data-form] [eo-block=title],
+.signup-eo [data-form] [eo-block=text] { display: none; }
+.signup-eo [data-form] .form-container { margin: 0; max-width: none; }
+.signup-eo [data-form] .main-form { flex-wrap: nowrap; gap: .5rem; align-items: stretch; justify-content: flex-start; }
+.signup-eo [data-form] .main-form .btn,
+.signup-eo [data-form] .main-form .emailoctopus-form-row { margin: 0; }
+.signup-eo [data-form] .emailoctopus-form-row { margin-bottom: 0; }
+.signup-eo [data-form] .form-control {
+  height: auto; padding: .8rem .9rem; font: 1rem var(--font);
+  border: 1px solid var(--graticule); border-radius: 4px; background: var(--paper-2); color: var(--ink);
+}
+.signup-eo [data-form] .form-control:focus { border-color: var(--north); box-shadow: 0 0 0 2px rgba(208,106,30,.35); }
+.signup-eo [data-form] .btn-primary {
+  width: auto; margin: 0; padding: .8rem 1.3rem; border: 0; border-radius: 4px; cursor: pointer;
+  background: var(--north); color: var(--ink); font: 600 .95rem var(--font);
+}
+.signup-eo [data-form] .btn-primary:hover,
+.signup-eo [data-form] .btn-primary:focus { background: #E07D33; color: var(--ink); box-shadow: none; }
+.signup-eo [data-form] .emailoctopus-success-message,
+.signup-eo [data-form] .emailoctopus-error-message { margin: 0 0 .5rem; font-family: var(--font); color: inherit; }
+.signup-eo [data-form] .text-center { text-align: left; }
+.signup-eo [data-form] .mastfoot { margin: .6rem 0 0; opacity: .8; }
+@media (max-width: 760px) {
+  .signup-eo [data-form] .main-form { flex-direction: column; }
+}

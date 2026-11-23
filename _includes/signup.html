@@ -1,12 +1,9 @@
-{% if site.buttondown_user != "" %}
-<form class="signup" action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_user }}" method="post" target="_blank">
-  <label for="signup-email">Email address</label>
-  <div class="signup-row">
-    <input id="signup-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-    <button type="submit">Subscribe</button>
-  </div>
+{% if site.emailoctopus_form != "" %}
+<div class="signup signup-eo">
+  <script async src="https://eocampaign1.com/form/{{ site.emailoctopus_form }}.js" data-form="{{ site.emailoctopus_form }}"></script>
   <p class="fine">Occasional updates on Declination. No spam, unsubscribe anytime.</p>
-</form>
+  <noscript><p class="fine">Enable JavaScript to sign up for updates.</p></noscript>
+</div>
 {% else %}
 <p class="fine">The mailing list is almost ready. Check back soon.</p>
 {% endif %}
