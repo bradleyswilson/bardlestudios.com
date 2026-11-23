@@ -148,6 +148,8 @@ h3 { font-size: 1.1rem; }
   padding: 1.5rem 1.25rem; color: var(--ink-soft);
 }
 .site-footer p { margin: 0; }
+.site-footer a { color: inherit; }
+.footer-email { text-transform: none; letter-spacing: .02em; }
 .home .site-footer { background: var(--ink); color: #B9B3CC; }
 .home .site-footer a { color: #B9B3CC; }
 

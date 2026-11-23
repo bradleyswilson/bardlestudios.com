@@ -33,7 +33,7 @@ The newest three posts appear on the home page, and the full list is at `/devlog
 
 ## Email signup
 
-The signup form uses [Buttondown](https://buttondown.com). Set `buttondown_user` in `_config.yml` to the Buttondown username to turn it on. While it's blank, the site shows a "coming soon" line instead.
+The signup form is an [EmailOctopus](https://emailoctopus.com) inline form. Its ID (the `data-form` value from the embed code) is set as `emailoctopus_form` in `_config.yml`. Change the form's fields and messages in EmailOctopus; the site picks them up automatically. The site's CSS (`assets/site.css`, "EmailOctopus embed") restyles it to match, and hides the form's own title and description. If `emailoctopus_form` is blank, the site shows a "coming soon" line instead.
 
 ## Running locally
 

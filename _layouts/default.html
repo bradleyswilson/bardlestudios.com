@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  {%- if page.description -%}
+    {%- assign page_description = page.description -%}
+  {%- elsif page.excerpt -%}
+    {%- assign page_description = page.excerpt | strip_html | normalize_whitespace | truncate: 160 -%}
+  {%- else -%}
+    {%- assign page_description = site.description -%}
+  {%- endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{{ page_description }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ page_description }}">
   <meta property="og:image" content="{{ site.url }}/assets/declination/logo-card.png">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +42,7 @@
 
   <footer class="site-footer">
     <p>Bardle Studios, Little Rock, Arkansas</p>
-    <p><a href="/feed.xml">RSS</a></p>
+    <p><a class="footer-email" href="mailto:hello@bardlestudios.com">hello@bardlestudios.com</a> · <a href="/feed.xml">RSS</a></p>
   </footer>
 </body>
 </html>
