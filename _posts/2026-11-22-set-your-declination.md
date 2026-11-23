@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Declination
+title: Set Your Declination
 ---
 
 Some version of Declination has been floating around in my head for a couple of years now. It's time I bring it out into the world.
