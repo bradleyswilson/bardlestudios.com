@@ -1,20 +1,14 @@
 ---
 layout: post
-title: Hello, Declination
+title: Welcome to Declination
 ---
 
-This is the first entry in the Bardle Studios devlog. It covers what we're making and why.
+Some version of Declination has been floating around in my head for a couple of years now. It's time I bring it out into the world.
 
-Declination is a puzzle-exploration game. You play as a small robot exploring a world left behind by a civilization that split itself apart before the planet's magnetic field reversed. The pieces it left behind, the sentinels, are dormant. Your job is to wake them.
+Declination is the story of an ancient civilization anchored to a magnetic pole and its collapse amidst a geomagnetic reversal. It's a story about how information is preserved and passed on among generations. It's a story inspired by absurdist philosophy and how to respond in an indifferent world. I believe deeply that the story of Declination is worth telling. It's my hope that it resonates with others. Follow along as I bring this world to life as a mystery puzzle game.
 
 ## How it plays
-
-You explore freely and read what's left on the walls. Some areas glow. Step into one and it locks into a small tactical grid with a limited number of turns. Inside the grid you can move and push or pull. Energy cores bounce off each other, and the goal is to get them into a pylon.
-
-The part we're most excited about is what happens beyond a single grid. Solving one puzzle can change something elsewhere in the world, and a later puzzle might ask you to kick something out of one grid and into another.
+Declination lives somewhere on the spectrum between a puzzle-adventure game and a metroidbrainia. You play as a robot named Remy exploring the world left behind by a civilization that split itself apart before the planet's magnetic field reversed. It's built around small, tactical rearrangement puzzles that lean heavily into electromagnetism: push, pull, and transfer charge between objects to power ancient machinery. These puzzles intertwine with each other and the broader world to tell a non-linear, knowledge-heavy story inspired by games like Outer Wilds, Tunic, and Subnautica.
 
 ## What's next
-
-Right now the game is a handful of rooms and a set of mechanics we like. Next we'll build out the first biome and work out how its puzzles connect.
-
-If you'd like to follow along, sign up below.
+The puzzle layers for an initial demo are fully drafted and functional. I'm working hard on level design and layout, iterating on the knowledge system, and drafting placeholder pixel art. If you'd like to follow along, sign up for updates below. I'll be eager to connect with puzzle-loving playtesters soon.
