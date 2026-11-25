@@ -6,6 +6,9 @@ url: "https://bardlestudios.com"
 # data-form attribute). Leave blank to show a "coming soon" note instead.
 emailoctopus_form: "eddce1ac-e6f4-11f1-9fab-3951c864474f"
 
+# Discord server invite link (footer and signup blocks).
+discord_url: "https://discord.gg/UX7Qu6zRE"
+
 permalink: /devlog/:year/:month/:day/:title/
 markdown: kramdown
 exclude:
